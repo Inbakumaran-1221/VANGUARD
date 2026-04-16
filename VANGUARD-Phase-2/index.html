@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | AccessAudit</title>
+  <meta name="description" content="AI-powered accessibility gap detection system for urban public transport.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="transit-stops.html">Transit Stops</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="analysis.html">Run Analysis</a>
+        <a href="reports.html">Reports</a>
+        <a href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <button class="text-btn" id="printReportTop" type="button">Export PDF</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Accessibility Dashboard</h1>
+          <p>Overview only. Open each section from the sidebar for full details.</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="loadDemo" type="button">Load Dataset</button>
+          <button class="btn btn-primary" id="runAudit" type="button">Run Analysis</button>
+        </div>
+      </header>
+
+      <section class="kpi-grid reveal" id="headlineKPIs"></section>
+
+      <section class="main-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Distribution Snapshot</h2>
+          </div>
+          <div class="bar-chart" id="distributionBars"></div>
+          <div class="chart-legend" id="distributionLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Top Risk Stops</h2>
+          </div>
+          <div class="metric-list" id="priorityList"></div>
+        </article>
+      </section>
+
+      <section class="sub-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Open Transit Stops Page</h2>
+          </div>
+          <p class="panel-sub">View map and stop-level table on a dedicated page.</p>
+          <a class="btn btn-secondary inline-link" href="transit-stops.html">Go to Transit Stops</a>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Open Grievances Page</h2>
+          </div>
+          <p class="panel-sub">Edit complaint text and run theme clustering separately.</p>
+          <a class="btn btn-secondary inline-link" href="grievances.html">Go to Grievances</a>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Open Reports Page</h2>
+          </div>
+          <p class="panel-sub">Export and print audit report in a dedicated layout.</p>
+          <a class="btn btn-secondary inline-link" href="reports.html">Go to Reports</a>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Run Image Analysis</h2>
+          </div>
+          <p class="panel-sub">Upload infrastructure evidence and run YOLO-backed accessibility checks.</p>
+          <a class="btn btn-secondary inline-link" href="analysis.html">Open Analysis</a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
