@@ -1,0 +1,48 @@
+Accessibility Auditor API Reference
+===================================
+
+API Technology Used
+--------------------
+- Framework: FastAPI
+- Server: Uvicorn
+- API style: REST
+- Documentation: OpenAPI/Swagger at /docs and ReDoc at /redoc
+- CORS: Enabled for frontend integration
+
+Purpose
+-------
+This API exposes the audit pipeline so transit accessibility analysis can be run
+from external clients, the dashboard, or automation scripts.
+
+Endpoints Used
+--------------
+1. GET /
+   - Health/status check
+
+2. POST /upload
+   - Upload transit stop and grievance CSV files
+   - Starts the audit pipeline and returns a job id
+
+3. GET /report/{job_id}
+   - Returns the JSON audit report
+
+4. GET /report/{job_id}/pdf
+   - Downloads the generated PDF report
+
+5. GET /stops/{job_id}
+   - Returns scored stops with priorities and recommendations
+
+6. GET /themes/{job_id}
+   - Returns grievance clusters and accessibility themes
+
+7. GET /priority-map/{job_id}
+   - Returns map-ready geospatial priority data
+
+8. GET /health
+   - Health check for the service
+
+Notes
+-----
+- The API caches audit results in memory for demo and local use.
+- The Streamlit dashboard uses the same pipeline output for visualization.
+- All endpoints are implemented in src/main.py.

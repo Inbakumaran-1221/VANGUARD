@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Analysis | AccessAudit</title>
+  <meta name="description" content="Upload infrastructure images and run YOLO accessibility analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">Dashboard</a>
+        <a href="transit-stops.html">Transit Stops</a>
+        <a href="grievances.html">Grievances</a>
+        <a class="active" href="analysis.html">Run Analysis</a>
+        <a href="reports.html">Reports</a>
+        <a href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="text-btn" id="printReportTop" type="button">Export PDF</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Image Recognition Analysis</h1>
+          <p>Upload evidence, run backend detection, and review accessibility gaps.</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="loadDataset" type="button">Load Dataset</button>
+          <button class="btn btn-primary" id="runImageAnalysis" type="button">Run Analysis</button>
+        </div>
+      </header>
+
+      <section class="sub-grid reveal analysis-grid">
+        <article class="panel analysis-panel">
+          <div class="panel-head">
+            <h2>Upload Image</h2>
+          </div>
+          <input id="imageUpload" class="file-input" type="file" accept="image/*" multiple webkitdirectory>
+          <div class="dataset-picker">
+            <label for="datasetSelector">Active dataset image</label>
+            <select id="datasetSelector" disabled></select>
+          </div>
+          <label class="confidence-control" for="analysisConfidence">
+            <span>Detection Confidence</span>
+            <input id="analysisConfidence" type="range" min="0.05" max="0.95" step="0.05" value="0.25">
+            <strong id="analysisConfidenceValue">0.25</strong>
+          </label>
+          <p class="panel-sub">Use JPEG/PNG image evidence from stop audits.</p>
+          <p class="panel-sub" id="datasetSummary">No dataset selected yet.</p>
+          <div class="metric-list" id="analysisStatus"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Detected Image</h2>
+          </div>
+          <div class="evidence-canvas analysis-preview">
+            <img id="analysisPreview" alt="Analyzed evidence preview" src="assets/dataset-samples/sample-ramp.jpg">
+            <div id="analysisBboxLayer"></div>
+          </div>
+          <div class="chart-legend" id="analysisSource">Source: dataset sample</div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Accessibility Features</h2>
+            <strong id="analysisScore">0</strong>
+          </div>
+          <div class="checklist-grid" id="analysisFeatures"></div>
+          <div class="metric-list" id="analysisGaps"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal table-panel">
+        <div class="panel-head">
+          <h2>Detected Objects</h2>
+          <span class="panel-sub">Class, confidence, and bounding box coordinates</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Object Class</th>
+                <th>Confidence</th>
+                <th>Bounding Box</th>
+              </tr>
+            </thead>
+            <tbody id="detectionsTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="analysis.js"></script>
+</body>
+</html>

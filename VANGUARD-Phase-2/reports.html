@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports | AccessAudit</title>
+  <meta name="description" content="Exportable audit report and metrics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">Dashboard</a>
+        <a href="transit-stops.html">Transit Stops</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="analysis.html">Run Analysis</a>
+        <a class="active" href="reports.html">Reports</a>
+        <a href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="text-btn" id="printReportTop" type="button">Export PDF</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Audit Reports</h1>
+          <p>Export-ready accessibility performance summary</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="loadDemo" type="button">Load Dataset</button>
+          <button class="btn btn-primary" id="runAudit" type="button">Run Analysis</button>
+        </div>
+      </header>
+
+      <section class="sub-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Network Coverage</h2>
+          </div>
+          <div class="coverage-block" id="coverageBlock"></div>
+          <div class="metric-stack" id="reportMetrics"></div>
+          <button class="btn btn-primary full" id="printReportBottom" type="button">Export Audit PDF</button>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Score Distribution</h2>
+          </div>
+          <div class="bar-chart" id="distributionBars"></div>
+          <div class="chart-legend" id="distributionLegend"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Priority Interventions</h2>
+          </div>
+          <div class="metric-list" id="priorityList"></div>
+        </article>
+      </section>
+
+      <section class="main-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Trend Analysis</h2>
+            <span class="panel-sub">Before vs after fixes</span>
+          </div>
+          <div class="metric-stack" id="trendMetrics"></div>
+          <div class="trend-bars" id="trendBars"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Accessibility Breakdown</h2>
+          </div>
+          <div class="metric-stack" id="accessibilityBreakdown"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal">
+        <div class="panel-head">
+          <h2>Alert System</h2>
+          <span class="panel-sub">Auto-notify authorities for critical issues</span>
+        </div>
+        <div class="metric-list" id="alertList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="reports.js"></script>
+</body>
+</html>

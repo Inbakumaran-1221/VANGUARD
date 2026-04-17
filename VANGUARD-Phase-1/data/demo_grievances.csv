@@ -1,0 +1,264 @@
+id,stop_id,text,category,severity,timestamp,submitted_by,resolved
+GRIEVANCE_00001,STOP_0041,"Only one bench, not enough seating for elderly users",,5,2025-12-27T20:27:47.839182,USER_2679,False
+GRIEVANCE_00002,STOP_0035,"Tactile pavement is missing, blind users can't navigate",,3,2026-02-03T14:14:47.839182,USER_4811,False
+GRIEVANCE_00003,STOP_0002,"Broken wheelchair ramp, can't be used",,3,2026-04-03T11:47:47.839182,USER_8359,False
+GRIEVANCE_00005,STOP_0011,"Staff not available, I needed help with my walker",,4,2026-01-13T21:22:47.839182,USER_2674,True
+GRIEVANCE_00006,STOP_0007,Audio signals are not working at the crossing,,5,2026-01-15T08:29:47.839182,USER_8527,False
+GRIEVANCE_00007,STOP_0025,"Lighting is broken, can't see properly",,5,2026-01-02T09:52:47.839182,USER_4150,False
+GRIEVANCE_00008,STOP_0003,"Restroom is not accessible, door too narrow",,2,2025-12-31T16:07:47.839182,USER_7227,False
+GRIEVANCE_00010,STOP_0011,"Tactile pavement is missing, blind users can't navigate",,5,2025-12-11T10:30:47.839182,USER_3803,False
+GRIEVANCE_00011,STOP_0016,Information board text is too small,,3,2026-01-23T22:12:47.839182,USER_6313,False
+GRIEVANCE_00012,STOP_0050,"Platform is at an angle, difficult for mobility users",,2,2025-10-26T23:38:47.839182,USER_4456,False
+GRIEVANCE_00014,STOP_0021,"Audio alert is too quiet, can't hear it",,3,2026-02-23T02:09:47.839182,USER_5339,True
+GRIEVANCE_00015,STOP_0048,"Broken wheelchair ramp, can't be used",,5,2025-12-25T12:50:47.839182,USER_7543,False
+GRIEVANCE_00016,STOP_0009,"Very dark at night, feels unsafe",,3,2025-11-10T15:08:47.839182,USER_3621,False
+GRIEVANCE_00017,STOP_0028,"Audio alert is too quiet, can't hear it",,5,2026-01-25T01:51:47.839182,USER_5119,False
+GRIEVANCE_00018,STOP_0001,Information board text is too small,,4,2025-11-17T11:09:47.839182,USER_6573,True
+GRIEVANCE_00019,STOP_0028,"Platform is at an angle, difficult for mobility users",,5,2025-10-19T13:09:47.839182,USER_3927,False
+GRIEVANCE_00021,STOP_0020,"Only one bench, not enough seating for elderly users",,4,2026-02-25T08:25:47.839182,USER_3646,False
+GRIEVANCE_00022,STOP_0050,"Steps at entrance, no alternative for disabled",,2,2025-10-19T08:33:47.839182,USER_2832,False
+GRIEVANCE_00023,STOP_0020,"Tactile pavement is missing, blind users can't navigate",,5,2025-12-19T07:18:47.839182,USER_8962,False
+GRIEVANCE_00024,STOP_0049,"Steps at entrance, no alternative for disabled",,5,2025-11-19T17:55:47.839182,USER_3705,False
+GRIEVANCE_00025,STOP_0039,"Staff not available, I needed help with my walker",,5,2025-12-12T07:01:47.839182,USER_6107,False
+GRIEVANCE_00026,STOP_0043,"Very dark at night, feels unsafe",,3,2026-02-08T05:41:47.839182,USER_4681,True
+GRIEVANCE_00027,STOP_0002,"No ramp at entrance, very difficult for wheelchair users",,2,2025-12-16T07:27:47.839182,USER_1964,False
+GRIEVANCE_00028,STOP_0003,"Platform is at an angle, difficult for mobility users",,5,2025-11-06T05:28:47.839182,USER_8953,False
+GRIEVANCE_00029,STOP_0009,"Restroom is not accessible, door too narrow",,5,2026-03-14T07:43:47.839182,USER_7669,True
+GRIEVANCE_00030,STOP_0007,"Audio alert is too quiet, can't hear it",,5,2026-01-17T02:39:47.839182,USER_1887,False
+GRIEVANCE_00031,STOP_0042,"Very dark at night, feels unsafe",,3,2026-01-30T12:34:47.839182,USER_4139,True
+GRIEVANCE_00032,STOP_0029,"Restroom is not accessible, door too narrow",,2,2025-12-03T21:42:47.839182,USER_8260,False
+GRIEVANCE_00033,STOP_0036,"No ramp at entrance, very difficult for wheelchair users",,2,2026-04-03T07:06:47.839182,USER_4872,True
+GRIEVANCE_00034,STOP_0032,No seating in waiting area,,2,2026-01-28T14:23:47.839182,USER_7396,False
+GRIEVANCE_00035,STOP_0030,Information board text is too small,,5,2026-04-15T13:03:47.839182,USER_8973,True
+GRIEVANCE_00036,STOP_0019,Information board text is too small,,2,2025-11-02T08:00:47.839182,USER_6138,True
+GRIEVANCE_00037,STOP_0038,"Crowded seating area, people with crutches can't sit",,2,2026-03-02T18:16:47.839182,USER_4044,True
+GRIEVANCE_00038,STOP_0005,No staff during night shifts when I arrive,,3,2025-12-18T01:20:47.839182,USER_1651,False
+GRIEVANCE_00039,STOP_0027,"Platform is at an angle, difficult for mobility users",,3,2026-03-12T05:33:47.839182,USER_6147,False
+GRIEVANCE_00040,STOP_0026,"Muddy area, tactile guide is covered",,2,2026-04-01T22:42:47.839182,USER_1152,False
+GRIEVANCE_00042,STOP_0005,"Lighting is broken, can't see properly",,2,2026-02-24T21:21:47.839182,USER_5002,False
+GRIEVANCE_00043,STOP_0011,"Accessible restroom locked, I couldn't use it",,5,2026-03-07T11:32:47.839182,USER_9666,True
+GRIEVANCE_00044,STOP_0036,"Only one bench, not enough seating for elderly users",,4,2026-04-05T17:09:47.839182,USER_2891,False
+GRIEVANCE_00045,STOP_0048,"Staff not available, I needed help with my walker",,5,2025-12-26T22:51:47.839182,USER_6617,False
+GRIEVANCE_00047,STOP_0033,"Broken wheelchair ramp, can't be used",,4,2025-10-31T15:53:47.839182,USER_1722,True
+GRIEVANCE_00048,STOP_0050,"Audio alert is too quiet, can't hear it",,5,2025-12-24T19:00:47.839182,USER_8007,False
+GRIEVANCE_00049,STOP_0008,Audio signals are not working at the crossing,,4,2026-04-12T17:47:47.839182,USER_3426,False
+GRIEVANCE_00050,STOP_0003,"Restroom is not accessible, door too narrow",,5,2025-10-29T00:26:47.839182,USER_2684,False
+GRIEVANCE_00051,STOP_0036,"Only one bench, not enough seating for elderly users",,3,2026-01-31T09:00:47.839182,USER_3662,False
+GRIEVANCE_00053,STOP_0002,"Restroom is not accessible, door too narrow",,4,2026-01-12T03:04:47.839182,USER_3608,False
+GRIEVANCE_00054,STOP_0007,"Staff not available, I needed help with my walker",,5,2025-10-28T04:27:47.839182,USER_6728,False
+GRIEVANCE_00055,STOP_0015,"Muddy area, tactile guide is covered",,4,2026-04-04T19:38:47.839182,USER_2137,False
+GRIEVANCE_00056,STOP_0018,Information board text is too small,,4,2026-02-26T01:56:47.839182,USER_1452,True
+GRIEVANCE_00057,STOP_0017,"Accessible restroom locked, I couldn't use it",,5,2025-12-24T14:19:47.839182,USER_6663,False
+GRIEVANCE_00058,STOP_0021,No staff during night shifts when I arrive,,3,2026-02-25T16:37:47.839182,USER_5173,True
+GRIEVANCE_00059,STOP_0028,"Staff not available, I needed help with my walker",,4,2026-03-05T10:59:47.839182,USER_8066,True
+GRIEVANCE_00061,STOP_0040,"No audio announcements, deaf users can't know route info",,5,2025-11-19T13:10:47.839182,USER_6067,False
+GRIEVANCE_00062,STOP_0021,"Staff not available, I needed help with my walker",,5,2026-01-02T06:21:47.839182,USER_7211,False
+GRIEVANCE_00063,STOP_0012,"No ramp at entrance, very difficult for wheelchair users",,4,2026-01-04T01:48:47.839182,USER_5700,False
+GRIEVANCE_00065,STOP_0021,"Crowded seating area, people with crutches can't sit",,5,2026-02-09T10:26:47.839182,USER_3780,False
+GRIEVANCE_00066,STOP_0019,"Tactile pavement is missing, blind users can't navigate",,3,2026-03-30T08:34:47.839182,USER_6085,False
+GRIEVANCE_00067,STOP_0013,"Accessible restroom locked, I couldn't use it",,2,2025-10-29T20:43:47.839182,USER_8461,False
+GRIEVANCE_00068,STOP_0041,No seating in waiting area,,3,2026-04-15T01:44:47.839182,USER_3417,False
+GRIEVANCE_00070,STOP_0050,"Crowded seating area, people with crutches can't sit",,5,2026-02-03T20:24:47.839182,USER_1822,False
+GRIEVANCE_00071,STOP_0008,Information board text is too small,,5,2026-02-14T10:46:47.839182,USER_6198,False
+GRIEVANCE_00073,STOP_0047,"No information board about routes, very confusing",,5,2026-02-05T06:41:47.839182,USER_8777,False
+GRIEVANCE_00074,STOP_0049,"Crowded seating area, people with crutches can't sit",,5,2026-03-30T22:02:47.839182,USER_4919,False
+GRIEVANCE_00075,STOP_0005,"Muddy area, tactile guide is covered",,5,2025-12-17T21:34:47.839182,USER_2320,True
+GRIEVANCE_00076,STOP_0015,"Tactile pavement is missing, blind users can't navigate",,5,2025-11-27T11:26:47.839182,USER_7678,False
+GRIEVANCE_00077,STOP_0030,No staff during night shifts when I arrive,,5,2025-12-10T02:37:47.839182,USER_1320,False
+GRIEVANCE_00078,STOP_0049,"No audio announcements, deaf users can't know route info",,5,2026-02-17T13:35:47.839182,USER_7865,False
+GRIEVANCE_00079,STOP_0048,"Restroom is not accessible, door too narrow",,4,2026-03-21T20:44:47.839182,USER_8140,False
+GRIEVANCE_00080,STOP_0025,"No information board about routes, very confusing",,5,2026-04-10T01:59:47.839182,USER_3091,False
+GRIEVANCE_00081,STOP_0035,"No ramp at entrance, very difficult for wheelchair users",,2,2026-01-27T07:49:47.839182,USER_8022,True
+GRIEVANCE_00082,STOP_0030,"Staff not available, I needed help with my walker",,5,2025-12-24T01:33:47.839182,USER_6355,False
+GRIEVANCE_00083,STOP_0025,"Tactile pavement is missing, blind users can't navigate",,5,2026-02-02T22:06:47.839182,USER_1317,False
+GRIEVANCE_00085,STOP_0023,"No ramp at entrance, very difficult for wheelchair users",,3,2025-11-05T09:15:47.839182,USER_4266,False
+GRIEVANCE_00086,STOP_0040,"Very dark at night, feels unsafe",,5,2025-11-20T04:55:47.839182,USER_4571,False
+GRIEVANCE_00087,STOP_0017,"Very dark at night, feels unsafe",,3,2025-11-30T08:51:47.839182,USER_6096,True
+GRIEVANCE_00089,STOP_0037,"Staff not available, I needed help with my walker",,2,2026-01-23T01:58:47.839182,USER_4978,True
+GRIEVANCE_00090,STOP_0050,"Very dark at night, feels unsafe",,5,2026-04-12T09:04:47.839182,USER_1672,False
+GRIEVANCE_00091,STOP_0028,"Muddy area, tactile guide is covered",,2,2025-11-05T05:54:47.839182,USER_7882,False
+GRIEVANCE_00092,STOP_0007,"Audio alert is too quiet, can't hear it",,5,2026-01-19T10:10:47.839182,USER_3506,False
+GRIEVANCE_00093,STOP_0047,Information board text is too small,,5,2026-04-02T21:52:47.839182,USER_8616,False
+GRIEVANCE_00094,STOP_0047,"Tactile pavement is missing, blind users can't navigate",,4,2026-01-08T21:06:47.839182,USER_8385,False
+GRIEVANCE_00095,STOP_0030,"No ramp at entrance, very difficult for wheelchair users",,5,2026-04-08T01:34:47.839182,USER_6325,True
+GRIEVANCE_00096,STOP_0014,"Accessible restroom locked, I couldn't use it",,5,2025-12-23T23:30:47.839182,USER_5526,False
+GRIEVANCE_00097,STOP_0034,"Broken wheelchair ramp, can't be used",,5,2025-11-08T20:59:47.839182,USER_4937,False
+GRIEVANCE_00098,STOP_0042,"No audio announcements, deaf users can't know route info",,3,2026-02-09T13:18:47.839182,USER_7625,False
+GRIEVANCE_00099,STOP_0020,"Crowded seating area, people with crutches can't sit",,4,2026-01-21T04:48:47.839182,USER_7971,False
+GRIEVANCE_00100,STOP_0036,"No audio announcements, deaf users can't know route info",,4,2026-04-16T03:30:47.839182,USER_4777,True
+GRIEVANCE_00101,STOP_0013,"Staff not available, I needed help with my walker",,3,2026-03-05T11:24:47.839182,USER_8933,False
+GRIEVANCE_00103,STOP_0034,"Restroom is not accessible, door too narrow",,4,2025-11-12T19:31:47.839182,USER_3939,False
+GRIEVANCE_00104,STOP_0046,Information board text is too small,,4,2025-12-27T14:16:47.839182,USER_3068,False
+GRIEVANCE_00105,STOP_0049,"Steps at entrance, no alternative for disabled",,5,2025-10-22T07:31:47.839182,USER_8216,False
+GRIEVANCE_00106,STOP_0004,"Tactile pavement is missing, blind users can't navigate",,5,2026-02-17T17:05:47.839182,USER_9056,True
+GRIEVANCE_00107,STOP_0041,No staff during night shifts when I arrive,,4,2025-11-25T18:04:47.839182,USER_2395,False
+GRIEVANCE_00108,STOP_0008,"Accessible restroom locked, I couldn't use it",,3,2026-02-02T08:51:47.839182,USER_9561,False
+GRIEVANCE_00109,STOP_0029,No staff during night shifts when I arrive,,5,2026-03-18T02:32:47.839182,USER_1986,False
+GRIEVANCE_00110,STOP_0048,"Platform is at an angle, difficult for mobility users",,5,2025-12-11T09:26:47.839182,USER_2330,True
+GRIEVANCE_00111,STOP_0012,"Audio alert is too quiet, can't hear it",,5,2025-11-27T13:39:47.839182,USER_8699,False
+GRIEVANCE_00112,STOP_0015,"Audio alert is too quiet, can't hear it",,2,2025-12-30T12:08:47.839182,USER_4824,False
+GRIEVANCE_00113,STOP_0041,Information board text is too small,,3,2025-12-08T02:20:47.839182,USER_3441,False
+GRIEVANCE_00114,STOP_0010,No staff during night shifts when I arrive,,4,2025-11-29T22:51:47.839182,USER_8195,True
+GRIEVANCE_00115,STOP_0045,Information board text is too small,,5,2026-01-29T21:45:47.839182,USER_8172,True
+GRIEVANCE_00116,STOP_0003,"No ramp at entrance, very difficult for wheelchair users",,2,2026-01-09T08:29:47.839182,USER_4750,False
+GRIEVANCE_00117,STOP_0037,"Platform is at an angle, difficult for mobility users",,5,2025-10-24T11:05:47.839182,USER_1659,False
+GRIEVANCE_00118,STOP_0012,"Platform is at an angle, difficult for mobility users",,3,2026-04-03T04:11:47.839182,USER_8141,False
+GRIEVANCE_00120,STOP_0031,"Very dark at night, feels unsafe",,3,2026-01-11T23:55:47.839182,USER_6403,False
+GRIEVANCE_00121,STOP_0032,"Audio alert is too quiet, can't hear it",,2,2026-01-29T06:15:47.839182,USER_6153,False
+GRIEVANCE_00123,STOP_0026,Information board text is too small,,5,2025-10-19T11:08:47.839182,USER_7770,True
+GRIEVANCE_00124,STOP_0034,Audio signals are not working at the crossing,,3,2026-02-23T09:41:47.839182,USER_5375,False
+GRIEVANCE_00125,STOP_0019,"No ramp at entrance, very difficult for wheelchair users",,5,2026-04-15T04:20:47.839182,USER_4920,False
+GRIEVANCE_00126,STOP_0020,"Restroom is not accessible, door too narrow",,2,2026-03-09T02:18:47.839182,USER_8560,False
+GRIEVANCE_00127,STOP_0042,"Crowded seating area, people with crutches can't sit",,5,2026-02-23T11:31:47.839182,USER_5479,False
+GRIEVANCE_00128,STOP_0031,"Only one bench, not enough seating for elderly users",,5,2025-12-20T03:48:47.839182,USER_4122,False
+GRIEVANCE_00130,STOP_0009,"Crowded seating area, people with crutches can't sit",,4,2025-12-28T02:34:47.839182,USER_1042,False
+GRIEVANCE_00131,STOP_0020,"Only one bench, not enough seating for elderly users",,5,2026-03-16T10:44:47.839182,USER_9824,False
+GRIEVANCE_00132,STOP_0022,"Muddy area, tactile guide is covered",,3,2026-03-07T01:42:47.839182,USER_4912,False
+GRIEVANCE_00133,STOP_0015,"Steps at entrance, no alternative for disabled",,5,2026-01-31T14:33:47.839182,USER_7246,False
+GRIEVANCE_00135,STOP_0042,"Crowded seating area, people with crutches can't sit",,5,2026-02-21T14:21:47.839182,USER_6439,False
+GRIEVANCE_00136,STOP_0029,"Only one bench, not enough seating for elderly users",,5,2026-02-11T13:59:47.839182,USER_3529,True
+GRIEVANCE_00137,STOP_0017,"Tactile pavement is missing, blind users can't navigate",,4,2026-04-14T01:54:47.839182,USER_9742,False
+GRIEVANCE_00138,STOP_0021,"Accessible restroom locked, I couldn't use it",,2,2026-02-20T06:15:47.839182,USER_4846,False
+GRIEVANCE_00140,STOP_0048,"Very dark at night, feels unsafe",,5,2025-11-13T09:58:47.839182,USER_3725,False
+GRIEVANCE_00141,STOP_0002,"Lighting is broken, can't see properly",,5,2025-11-01T22:35:47.839182,USER_3385,False
+GRIEVANCE_00142,STOP_0027,"Tactile pavement is missing, blind users can't navigate",,5,2025-12-03T18:24:47.839182,USER_7267,False
+GRIEVANCE_00143,STOP_0016,"Audio alert is too quiet, can't hear it",,5,2026-03-16T17:27:47.839182,USER_5161,False
+GRIEVANCE_00144,STOP_0043,Information board text is too small,,3,2026-02-14T22:56:47.839182,USER_2210,False
+GRIEVANCE_00146,STOP_0020,"Audio alert is too quiet, can't hear it",,4,2026-02-04T11:29:47.839182,USER_4263,False
+GRIEVANCE_00147,STOP_0031,No staff during night shifts when I arrive,,4,2026-01-24T07:35:47.839182,USER_5837,True
+GRIEVANCE_00148,STOP_0043,Audio signals are not working at the crossing,,5,2025-10-21T08:08:47.839182,USER_9138,False
+GRIEVANCE_00150,STOP_0015,"Staff not available, I needed help with my walker",,5,2026-01-16T20:53:47.839182,USER_5106,False
+GRIEVANCE_00151,STOP_0047,"Very dark at night, feels unsafe",,5,2026-04-10T17:53:47.839182,USER_1645,False
+GRIEVANCE_00152,STOP_0029,"Tactile pavement is missing, blind users can't navigate",,4,2026-01-20T12:21:47.839182,USER_6352,False
+GRIEVANCE_00153,STOP_0012,"Crowded seating area, people with crutches can't sit",,4,2026-03-06T00:46:47.839182,USER_3695,False
+GRIEVANCE_00154,STOP_0031,"Muddy area, tactile guide is covered",,2,2026-01-02T13:08:47.839182,USER_8673,False
+GRIEVANCE_00156,STOP_0015,Information board text is too small,,4,2026-04-09T02:07:47.839182,USER_2479,False
+GRIEVANCE_00157,STOP_0001,"Platform is at an angle, difficult for mobility users",,5,2025-11-19T03:36:47.839182,USER_7242,False
+GRIEVANCE_00158,STOP_0024,"Accessible restroom locked, I couldn't use it",,5,2025-12-17T04:14:47.839182,USER_6374,False
+GRIEVANCE_00159,STOP_0015,"No audio announcements, deaf users can't know route info",,5,2026-03-30T04:11:47.839182,USER_7689,True
+GRIEVANCE_00160,STOP_0003,"Very dark at night, feels unsafe",,3,2026-01-04T04:20:47.839182,USER_9807,True
+GRIEVANCE_00161,STOP_0030,No staff during night shifts when I arrive,,5,2026-04-15T06:39:47.839182,USER_3531,False
+GRIEVANCE_00162,STOP_0042,"Platform is at an angle, difficult for mobility users",,2,2026-02-21T08:39:47.839182,USER_7070,False
+GRIEVANCE_00164,STOP_0024,"Lighting is broken, can't see properly",,2,2026-04-12T00:47:47.839182,USER_7523,False
+GRIEVANCE_00166,STOP_0030,"Accessible restroom locked, I couldn't use it",,2,2025-12-12T09:53:47.839182,USER_1828,False
+GRIEVANCE_00167,STOP_0016,Information board text is too small,,3,2026-03-11T19:17:47.839182,USER_4538,False
+GRIEVANCE_00168,STOP_0015,"Platform is at an angle, difficult for mobility users",,3,2025-11-25T08:13:47.839182,USER_3129,False
+GRIEVANCE_00169,STOP_0012,"Lighting is broken, can't see properly",,3,2025-10-24T17:13:47.839182,USER_6304,True
+GRIEVANCE_00170,STOP_0017,"Tactile pavement is missing, blind users can't navigate",,5,2026-02-03T05:20:47.839182,USER_8344,False
+GRIEVANCE_00172,STOP_0029,"Crowded seating area, people with crutches can't sit",,4,2026-03-24T14:59:47.839182,USER_8504,False
+GRIEVANCE_00173,STOP_0002,"Very dark at night, feels unsafe",,5,2026-02-18T01:40:47.839182,USER_8267,True
+GRIEVANCE_00174,STOP_0006,"Platform is at an angle, difficult for mobility users",,5,2025-11-24T15:21:47.839182,USER_9984,False
+GRIEVANCE_00175,STOP_0025,"Crowded seating area, people with crutches can't sit",,5,2026-03-02T22:42:47.839182,USER_8048,True
+GRIEVANCE_00176,STOP_0045,Information board text is too small,,5,2026-04-04T10:09:47.839182,USER_4522,False
+GRIEVANCE_00177,STOP_0015,"Very dark at night, feels unsafe",,4,2026-02-12T01:39:47.839182,USER_7992,False
+GRIEVANCE_00178,STOP_0017,"Steps at entrance, no alternative for disabled",,2,2025-11-27T11:12:47.839182,USER_2494,False
+GRIEVANCE_00179,STOP_0006,Audio signals are not working at the crossing,,5,2026-01-21T17:48:47.839182,USER_6400,False
+GRIEVANCE_00180,STOP_0027,Audio signals are not working at the crossing,,4,2026-04-07T03:08:47.839182,USER_6119,False
+GRIEVANCE_00181,STOP_0037,"Restroom is not accessible, door too narrow",,2,2025-11-27T10:43:47.839182,USER_6736,False
+GRIEVANCE_00182,STOP_0024,"Broken wheelchair ramp, can't be used",,5,2025-12-29T07:27:47.839182,USER_1430,False
+GRIEVANCE_00184,STOP_0018,"No audio announcements, deaf users can't know route info",,4,2025-12-27T12:01:47.839182,USER_6751,True
+GRIEVANCE_00186,STOP_0026,"Crowded seating area, people with crutches can't sit",,3,2026-03-29T13:18:47.839182,USER_7163,False
+GRIEVANCE_00187,STOP_0022,No staff during night shifts when I arrive,,5,2026-01-06T12:33:47.839182,USER_2391,False
+GRIEVANCE_00188,STOP_0010,"Tactile pavement is missing, blind users can't navigate",,4,2026-03-25T14:56:47.839182,USER_8259,False
+GRIEVANCE_00189,STOP_0032,"Crowded seating area, people with crutches can't sit",,2,2026-02-01T21:26:47.839182,USER_6655,False
+GRIEVANCE_00190,STOP_0019,"No audio announcements, deaf users can't know route info",,2,2026-03-19T04:46:47.839182,USER_4612,False
+GRIEVANCE_00191,STOP_0039,"Only one bench, not enough seating for elderly users",,4,2025-12-09T22:26:47.839182,USER_5742,False
+GRIEVANCE_00192,STOP_0001,No seating in waiting area,,5,2026-02-05T18:21:47.839182,USER_4770,False
+GRIEVANCE_00194,STOP_0005,"Audio alert is too quiet, can't hear it",,2,2025-10-29T02:14:47.839182,USER_6129,False
+GRIEVANCE_00195,STOP_0037,"Very dark at night, feels unsafe",,5,2026-03-31T02:31:47.839182,USER_1341,False
+GRIEVANCE_00196,STOP_0011,"Lighting is broken, can't see properly",,2,2026-03-26T04:06:47.839182,USER_8155,False
+GRIEVANCE_00197,STOP_0016,No seating in waiting area,,4,2026-01-29T05:18:47.839182,USER_6562,False
+GRIEVANCE_00198,STOP_0050,"Crowded seating area, people with crutches can't sit",,5,2026-02-26T09:20:47.839182,USER_4176,False
+GRIEVANCE_00199,STOP_0023,"Very dark at night, feels unsafe",,3,2026-04-01T17:28:47.839182,USER_5193,True
+GRIEVANCE_00200,STOP_0039,"Steps at entrance, no alternative for disabled",,5,2026-04-03T15:24:47.839182,USER_8354,False
+GRIEVANCE_00201,STOP_0037,"Muddy area, tactile guide is covered",,3,2026-03-27T00:08:47.839182,USER_8205,True
+GRIEVANCE_00203,STOP_0018,"No audio announcements, deaf users can't know route info",,5,2026-01-17T05:17:47.839182,USER_8404,True
+GRIEVANCE_00204,STOP_0024,"Tactile pavement is missing, blind users can't navigate",,5,2025-11-07T10:08:47.839182,USER_9307,False
+GRIEVANCE_00205,STOP_0038,No staff during night shifts when I arrive,,5,2025-10-29T04:11:47.839182,USER_4084,False
+GRIEVANCE_00206,STOP_0031,"Muddy area, tactile guide is covered",,5,2025-11-03T03:19:47.839182,USER_2381,False
+GRIEVANCE_00207,STOP_0012,"Crowded seating area, people with crutches can't sit",,5,2026-02-08T03:46:47.839182,USER_3600,False
+GRIEVANCE_00208,STOP_0019,Audio signals are not working at the crossing,,5,2026-01-13T10:51:47.839182,USER_6482,True
+GRIEVANCE_00209,STOP_0007,"Accessible restroom locked, I couldn't use it",,3,2026-01-24T22:29:47.839182,USER_6461,True
+GRIEVANCE_00210,STOP_0043,No seating in waiting area,,3,2026-01-15T22:54:47.839182,USER_2388,False
+GRIEVANCE_00211,STOP_0025,"Crowded seating area, people with crutches can't sit",,2,2026-01-10T17:55:47.839182,USER_7937,False
+GRIEVANCE_00212,STOP_0002,"Steps at entrance, no alternative for disabled",,3,2025-12-03T19:34:47.839182,USER_4711,False
+GRIEVANCE_00213,STOP_0010,Information board text is too small,,5,2025-11-13T06:02:47.839182,USER_9626,True
+GRIEVANCE_00214,STOP_0022,No seating in waiting area,,3,2026-03-25T17:51:47.839182,USER_3658,True
+GRIEVANCE_00215,STOP_0045,Audio signals are not working at the crossing,,5,2025-11-30T12:41:47.839182,USER_6968,False
+GRIEVANCE_00216,STOP_0016,"Audio alert is too quiet, can't hear it",,3,2026-03-23T23:01:47.839182,USER_9749,False
+GRIEVANCE_00217,STOP_0031,No staff during night shifts when I arrive,,5,2025-12-07T00:56:47.839182,USER_8564,False
+GRIEVANCE_00218,STOP_0050,"Staff not available, I needed help with my walker",,5,2026-03-03T02:23:47.839182,USER_3267,False
+GRIEVANCE_00219,STOP_0004,"Very dark at night, feels unsafe",,5,2026-01-22T07:12:47.839182,USER_9452,False
+GRIEVANCE_00220,STOP_0019,"Crowded seating area, people with crutches can't sit",,3,2025-11-28T21:41:47.839182,USER_8167,True
+GRIEVANCE_00221,STOP_0015,Audio signals are not working at the crossing,,5,2026-01-15T13:39:47.839182,USER_9224,False
+GRIEVANCE_00222,STOP_0025,"Muddy area, tactile guide is covered",,2,2026-01-21T20:14:47.839182,USER_6493,False
+GRIEVANCE_00223,STOP_0009,"Only one bench, not enough seating for elderly users",,5,2026-02-16T12:06:47.839182,USER_8685,False
+GRIEVANCE_00225,STOP_0002,"Accessible restroom locked, I couldn't use it",,5,2025-11-26T06:59:47.839182,USER_7934,True
+GRIEVANCE_00226,STOP_0019,"Broken wheelchair ramp, can't be used",,5,2025-11-18T14:28:47.839182,USER_8489,True
+GRIEVANCE_00227,STOP_0032,No staff during night shifts when I arrive,,3,2025-10-23T09:45:47.839182,USER_3352,False
+GRIEVANCE_00228,STOP_0001,"No information board about routes, very confusing",,5,2025-12-19T07:39:47.839182,USER_2402,False
+GRIEVANCE_00229,STOP_0024,"Crowded seating area, people with crutches can't sit",,5,2026-03-02T06:45:47.839182,USER_1333,False
+GRIEVANCE_00230,STOP_0031,"No ramp at entrance, very difficult for wheelchair users",,4,2026-01-26T00:29:47.839182,USER_2106,False
+GRIEVANCE_00231,STOP_0047,"Muddy area, tactile guide is covered",,3,2025-11-14T08:00:47.839182,USER_1726,False
+GRIEVANCE_00232,STOP_0022,"Steps at entrance, no alternative for disabled",,5,2025-12-02T10:42:47.839182,USER_3986,False
+GRIEVANCE_00233,STOP_0005,"Staff not available, I needed help with my walker",,2,2026-02-12T14:31:47.839182,USER_4268,False
+GRIEVANCE_00234,STOP_0021,Information board text is too small,,5,2026-02-27T02:05:47.839182,USER_5150,True
+GRIEVANCE_00235,STOP_0042,"Muddy area, tactile guide is covered",,4,2026-01-17T15:08:47.839182,USER_3039,False
+GRIEVANCE_00236,STOP_0028,"No information board about routes, very confusing",,5,2026-02-08T01:34:47.839182,USER_9151,False
+GRIEVANCE_00237,STOP_0034,"Tactile pavement is missing, blind users can't navigate",,5,2025-11-09T12:40:47.839182,USER_3956,False
+GRIEVANCE_00238,STOP_0021,"No audio announcements, deaf users can't know route info",,5,2026-01-10T10:31:47.839182,USER_7981,True
+GRIEVANCE_00239,STOP_0029,"Lighting is broken, can't see properly",,5,2025-10-29T13:08:47.839182,USER_8126,False
+GRIEVANCE_00240,STOP_0004,"Crowded seating area, people with crutches can't sit",,5,2026-03-31T01:36:47.839182,USER_3621,False
+GRIEVANCE_00242,STOP_0044,"Restroom is not accessible, door too narrow",,5,2025-10-26T17:17:47.839182,USER_7001,False
+GRIEVANCE_00243,STOP_0037,"Lighting is broken, can't see properly",,4,2025-11-27T10:41:47.839182,USER_8273,False
+GRIEVANCE_00244,STOP_0037,"Platform is at an angle, difficult for mobility users",,3,2026-01-20T01:33:47.839182,USER_2858,True
+GRIEVANCE_00245,STOP_0012,"Platform is at an angle, difficult for mobility users",,4,2026-01-26T06:20:47.839182,USER_8311,False
+GRIEVANCE_00246,STOP_0040,"Only one bench, not enough seating for elderly users",,2,2026-02-20T19:20:47.839182,USER_8406,True
+GRIEVANCE_00247,STOP_0046,"Muddy area, tactile guide is covered",,5,2025-11-10T11:07:47.839182,USER_6692,False
+GRIEVANCE_00248,STOP_0036,"No information board about routes, very confusing",,4,2026-01-02T18:58:47.839182,USER_9335,False
+GRIEVANCE_00250,STOP_0016,No staff during night shifts when I arrive,,4,2025-10-25T00:48:47.839182,USER_8657,False
+GRIEVANCE_00251,STOP_0036,No seating in waiting area,,5,2025-11-09T15:32:47.839182,USER_8842,False
+GRIEVANCE_00252,STOP_0050,"Muddy area, tactile guide is covered",,5,2026-03-14T15:21:47.839182,USER_2215,False
+GRIEVANCE_00253,STOP_0044,No staff during night shifts when I arrive,,3,2025-11-20T06:53:47.839182,USER_3114,False
+GRIEVANCE_00254,STOP_0004,"No information board about routes, very confusing",,3,2026-02-27T17:32:47.839182,USER_6286,False
+GRIEVANCE_00255,STOP_0015,"Tactile pavement is missing, blind users can't navigate",,4,2026-02-27T23:07:47.839182,USER_4216,False
+GRIEVANCE_00256,STOP_0036,Information board text is too small,,2,2026-03-27T22:52:47.839182,USER_9234,False
+GRIEVANCE_00258,STOP_0010,"Accessible restroom locked, I couldn't use it",,4,2026-03-27T13:10:47.839182,USER_1674,False
+GRIEVANCE_00259,STOP_0002,"Staff not available, I needed help with my walker",,5,2026-04-01T07:29:47.839182,USER_7825,False
+GRIEVANCE_00260,STOP_0002,"No audio announcements, deaf users can't know route info",,5,2026-03-28T06:31:47.839182,USER_5012,False
+GRIEVANCE_00261,STOP_0044,Audio signals are not working at the crossing,,3,2026-02-11T15:57:47.839182,USER_8202,False
+GRIEVANCE_00262,STOP_0030,"Muddy area, tactile guide is covered",,5,2026-03-22T17:33:47.839182,USER_6658,False
+GRIEVANCE_00263,STOP_0009,"Muddy area, tactile guide is covered",,3,2026-02-27T06:19:47.839182,USER_8642,True
+GRIEVANCE_00264,STOP_0029,No seating in waiting area,,5,2025-11-11T14:31:47.839182,USER_7850,False
+GRIEVANCE_00265,STOP_0011,"Staff not available, I needed help with my walker",,3,2026-03-15T12:33:47.839182,USER_9163,False
+GRIEVANCE_00266,STOP_0030,"Tactile pavement is missing, blind users can't navigate",,5,2026-01-05T04:14:47.839182,USER_9281,False
+GRIEVANCE_00267,STOP_0016,"No audio announcements, deaf users can't know route info",,5,2026-01-16T14:16:47.839182,USER_8710,False
+GRIEVANCE_00269,STOP_0028,No seating in waiting area,,4,2025-12-25T12:36:47.839182,USER_1741,False
+GRIEVANCE_00270,STOP_0037,"Tactile pavement is missing, blind users can't navigate",,5,2026-01-19T06:31:47.839182,USER_9261,False
+GRIEVANCE_00271,STOP_0036,"Very dark at night, feels unsafe",,3,2026-03-27T10:52:47.839182,USER_2584,False
+GRIEVANCE_00272,STOP_0022,"Accessible restroom locked, I couldn't use it",,5,2026-01-19T17:25:47.839182,USER_7576,False
+GRIEVANCE_00273,STOP_0003,"Audio alert is too quiet, can't hear it",,3,2026-01-12T04:46:47.839182,USER_9446,True
+GRIEVANCE_00274,STOP_0040,"No audio announcements, deaf users can't know route info",,5,2026-01-27T09:00:47.839182,USER_6511,False
+GRIEVANCE_00275,STOP_0033,"No ramp at entrance, very difficult for wheelchair users",,4,2026-03-11T22:43:47.839182,USER_6427,False
+GRIEVANCE_00276,STOP_0027,"Accessible restroom locked, I couldn't use it",,5,2026-04-13T09:14:47.839182,USER_5350,False
+GRIEVANCE_00277,STOP_0050,No staff during night shifts when I arrive,,5,2025-12-16T12:16:47.839182,USER_3793,False
+GRIEVANCE_00278,STOP_0047,"Restroom is not accessible, door too narrow",,2,2026-01-23T18:05:47.839182,USER_2800,True
+GRIEVANCE_00279,STOP_0029,"Staff not available, I needed help with my walker",,5,2025-11-26T02:57:47.839182,USER_9221,False
+GRIEVANCE_00280,STOP_0031,"Crowded seating area, people with crutches can't sit",,3,2025-11-03T11:21:47.839182,USER_6325,False
+GRIEVANCE_00281,STOP_0031,Information board text is too small,,4,2026-01-06T18:42:47.839182,USER_9950,False
+GRIEVANCE_00282,STOP_0050,"Platform is at an angle, difficult for mobility users",,5,2026-04-11T10:04:47.839182,USER_8932,True
+GRIEVANCE_00283,STOP_0016,"No audio announcements, deaf users can't know route info",,5,2026-01-02T20:32:47.839182,USER_4396,False
+GRIEVANCE_00284,STOP_0032,"Platform is at an angle, difficult for mobility users",,4,2026-01-16T07:12:47.839182,USER_2996,False
+GRIEVANCE_00285,STOP_0035,"Only one bench, not enough seating for elderly users",,4,2026-01-28T01:02:47.839182,USER_1689,False
+GRIEVANCE_00286,STOP_0046,"Steps at entrance, no alternative for disabled",,3,2026-02-09T09:29:47.839182,USER_4310,False
+GRIEVANCE_00287,STOP_0018,"Very dark at night, feels unsafe",,5,2026-04-14T21:21:47.839182,USER_4920,False
+GRIEVANCE_00289,STOP_0015,"Muddy area, tactile guide is covered",,5,2025-10-31T16:39:47.839182,USER_8739,True
+GRIEVANCE_00290,STOP_0050,"Steps at entrance, no alternative for disabled",,5,2026-03-07T18:39:47.839182,USER_4267,False
+GRIEVANCE_00291,STOP_0019,"Tactile pavement is missing, blind users can't navigate",,5,2026-04-01T15:11:47.839182,USER_4804,False
+GRIEVANCE_00292,STOP_0047,"No information board about routes, very confusing",,2,2025-10-27T18:39:47.839182,USER_7504,False
+GRIEVANCE_00295,STOP_0001,"Muddy area, tactile guide is covered",,4,2026-03-21T17:12:47.839182,USER_8444,False
+GRIEVANCE_00296,STOP_0035,"Platform is at an angle, difficult for mobility users",,3,2025-11-22T05:42:47.839182,USER_2845,False
+GRIEVANCE_00297,STOP_0047,"No ramp at entrance, very difficult for wheelchair users",,5,2025-12-23T11:24:47.839182,USER_6523,False
+GRIEVANCE_00298,STOP_0037,No seating in waiting area,,5,2025-12-06T18:52:47.839182,USER_9442,False
+GRIEVANCE_00299,STOP_0026,"Muddy area, tactile guide is covered",,3,2025-12-04T17:43:47.839182,USER_1111,False
+GRIEVANCE_00300,STOP_0016,No staff during night shifts when I arrive,,5,2025-12-25T23:32:47.839182,USER_1187,False

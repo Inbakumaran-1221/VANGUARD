@@ -1,0 +1,114 @@
+﻿python : D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: 
+UserWarning: KMeans is known to have a memory leak on Windows with MKL, when 
+there are less chunks than available threads. You can avoid it by setting the 
+environment variable OMP_NUM_THREADS=2.
+At line:1 char:1
++ python run_demo.py 2>&1 | Out-File demo_output.txt -Encoding UTF8 ; G ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\ana\Lib\site..._NUM_THREADS=2. 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+D:\ana\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans 
+is known to have a memory leak on Windows with MKL, when there are less chunks 
+than available threads. You can avoid it by setting the environment variable 
+OMP_NUM_THREADS=2.
+  warnings.warn(
+[STARTING] Running Accessibility Auditor Pipeline...
+
+
+[SUCCESS] AUDIT COMPLETE
+
+[TIME] Execution Time: 8.29s
+[STOPS] Stops Audited: 50
+[GRIEVANCES] Grievances Analyzed: 263
+[COVERAGE] Network Coverage: 100.0%
+[SCORE] Average Gap Score: 70.1/100
+
+[PRIORITY] Priority Breakdown:
+   CRITICAL: 20
+   HIGH: 10
+   MEDIUM: 18
+   LOW: 2
+
+[THEMES] Top Grievance Themes:
+   * Staff/Assistance: 15 complaints
+   * Information/Navigation: 26 complaints
+   * No Seating: 21 complaints
+   * Missing Ramp: 27 complaints
+   * Tactile Issues: 19 complaints
+
+[TOP-STOPS] Top 5 Priority Stops:
+   1. South Gate (Gap: 100.0/100, Priority: PriorityLevel.CRITICAL)
+   2. Downtown Hub (Gap: 100.0/100, Priority: PriorityLevel.CRITICAL)
+   3. riverside (Gap: 100.0/100, Priority: PriorityLevel.CRITICAL)
+   4. Community Center (Gap: 100.0/100, Priority: PriorityLevel.CRITICAL)
+   5. Beach Street (Gap: 98.9/100, Priority: PriorityLevel.CRITICAL)
+
+[PDF] Generating PDF Report...
+[SAVED] PDF: Demo_City_Accessibility_Report.pdf (7.1 KB)
+
+============================================================
+[COMPLETE] System is fully functional and ready to use!
+============================================================

@@ -1,0 +1,342 @@
+2026-04-16 13:34:28,788 - src.pipeline - INFO - ================================================================================
+2026-04-16 13:34:28,788 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 13:34:28,789 - src.pipeline - INFO - ================================================================================
+2026-04-16 13:34:28,789 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 13:34:28,790 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 13:34:28,799 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 13:34:28,800 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 13:34:28,800 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 13:34:28,804 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 13:34:28,814 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 13:34:28,815 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 13:34:28,815 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 13:34:34,861 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 13:34:37,447 - src.clustering - INFO - Created 15 clusters
+2026-04-16 13:34:37,460 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 13:34:37,461 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 13:34:37,461 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 13:34:37,462 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 13:34:37,465 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 13:34:37,466 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 13:34:37,466 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 13:34:37,466 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 13:34:37,466 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 13:34:37,467 - src.pipeline - INFO - Generating audit report...
+2026-04-16 13:34:37,467 - src.pipeline - INFO - Report generated: AUDIT_20260416_133437_bd2ddd41
+2026-04-16 13:34:37,468 - src.pipeline - INFO - ================================================================================
+2026-04-16 13:34:37,468 - src.pipeline - INFO - Audit pipeline completed in 8.68s
+2026-04-16 13:34:37,468 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:05:29,440 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:05:29,440 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 15:05:29,441 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:05:29,441 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 15:05:29,441 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 15:05:29,480 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:05:29,480 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:05:29,481 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 15:05:29,483 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 15:05:29,487 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 15:05:29,487 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 15:05:29,488 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 15:05:35,710 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 15:05:38,324 - src.clustering - INFO - Created 15 clusters
+2026-04-16 15:05:38,335 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 15:05:38,335 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 15:05:38,336 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 15:05:38,336 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 15:05:38,338 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 15:05:38,338 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 15:05:38,338 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 15:05:38,338 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 15:05:38,339 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 15:05:38,339 - src.pipeline - INFO - Generating audit report...
+2026-04-16 15:05:38,339 - src.pipeline - INFO - Report generated: AUDIT_20260416_150538_40346c86
+2026-04-16 15:05:38,340 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:05:38,340 - src.pipeline - INFO - Audit pipeline completed in 8.90s
+2026-04-16 15:05:38,341 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:14:17,151 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:14:17,152 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 15:14:17,152 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:14:17,152 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 15:14:17,152 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 15:14:17,156 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:14:17,156 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:14:17,157 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 15:14:17,158 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 15:14:17,163 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 15:14:17,163 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 15:14:17,164 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 15:14:18,056 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 15:14:18,162 - src.clustering - INFO - Created 15 clusters
+2026-04-16 15:14:18,175 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 15:14:18,176 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 15:14:18,176 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 15:14:18,176 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 15:14:18,180 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 15:14:18,180 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 15:14:18,181 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 15:14:18,181 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 15:14:18,181 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 15:14:18,181 - src.pipeline - INFO - Generating audit report...
+2026-04-16 15:14:18,181 - src.pipeline - INFO - Report generated: AUDIT_20260416_151418_5e0f6481
+2026-04-16 15:14:18,181 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:14:18,182 - src.pipeline - INFO - Audit pipeline completed in 1.03s
+2026-04-16 15:14:18,182 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:28:18,824 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:28:18,825 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 15:28:18,826 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:28:18,827 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 15:28:18,828 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 15:28:18,837 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:28:18,837 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:28:18,838 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 15:28:18,839 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 15:28:18,847 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 15:28:18,848 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 15:28:18,848 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 15:28:19,829 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 15:28:19,949 - src.clustering - INFO - Created 15 clusters
+2026-04-16 15:28:19,965 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 15:28:19,965 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 15:28:19,965 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 15:28:19,966 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 15:28:19,970 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 15:28:19,971 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 15:28:19,971 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 15:28:19,971 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 15:28:19,972 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 15:28:19,972 - src.pipeline - INFO - Generating audit report...
+2026-04-16 15:28:19,972 - src.pipeline - INFO - Report generated: AUDIT_20260416_152819_61bd4eff
+2026-04-16 15:28:19,973 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:28:19,973 - src.pipeline - INFO - Audit pipeline completed in 1.15s
+2026-04-16 15:28:19,973 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:28:38,747 - src.pdf_reporter - INFO - Generating PDF report: AUDIT_20260416_152819_61bd4eff
+2026-04-16 15:28:38,776 - src.pdf_reporter - INFO - PDF generated (7316 bytes)
+2026-04-16 15:42:56,369 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:42:56,370 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 15:42:56,370 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:42:56,371 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 15:42:56,371 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 15:42:56,376 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:42:56,376 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:42:56,377 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 15:42:56,379 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 15:42:56,384 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 15:42:56,385 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 15:42:56,385 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 15:42:57,263 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 15:42:57,364 - src.clustering - INFO - Created 15 clusters
+2026-04-16 15:42:57,380 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 15:42:57,380 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 15:42:57,380 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 15:42:57,380 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 15:42:57,383 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 15:42:57,383 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 15:42:57,384 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 15:42:57,384 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 15:42:57,384 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 15:42:57,384 - src.pipeline - INFO - Generating audit report...
+2026-04-16 15:42:57,384 - src.pipeline - INFO - Report generated: AUDIT_20260416_154257_83f2ee5b
+2026-04-16 15:42:57,385 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:42:57,385 - src.pipeline - INFO - Audit pipeline completed in 1.02s
+2026-04-16 15:42:57,385 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:58:13,071 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:58:13,072 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 15:58:13,073 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:58:13,073 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 15:58:13,074 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 15:58:13,083 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:58:13,084 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 15:58:13,085 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 15:58:13,087 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 15:58:13,092 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 15:58:13,092 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 15:58:13,093 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 15:58:19,038 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 15:58:21,274 - src.clustering - INFO - Created 15 clusters
+2026-04-16 15:58:21,285 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 15:58:21,285 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 15:58:21,286 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 15:58:21,286 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 15:58:21,288 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 15:58:21,288 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 15:58:21,288 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 15:58:21,289 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 15:58:21,289 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 15:58:21,289 - src.pipeline - INFO - Generating audit report...
+2026-04-16 15:58:21,290 - src.pipeline - INFO - Report generated: AUDIT_20260416_155821_42a0352a
+2026-04-16 15:58:21,290 - src.pipeline - INFO - ================================================================================
+2026-04-16 15:58:21,290 - src.pipeline - INFO - Audit pipeline completed in 8.22s
+2026-04-16 15:58:21,290 - src.pipeline - INFO - ================================================================================
+2026-04-16 18:33:05,485 - src.pipeline - INFO - ================================================================================
+2026-04-16 18:33:05,488 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 18:33:05,489 - src.pipeline - INFO - ================================================================================
+2026-04-16 18:33:05,489 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 18:33:05,489 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 18:33:05,495 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 18:33:05,496 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 18:33:05,496 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 18:33:05,499 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 18:33:05,506 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 18:33:05,506 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 18:33:05,506 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 18:33:11,491 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 18:33:13,311 - src.clustering - INFO - Created 15 clusters
+2026-04-16 18:33:13,320 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 18:33:13,320 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 18:33:13,320 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 18:33:13,321 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 18:33:13,323 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 18:33:13,323 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 18:33:13,323 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 18:33:13,323 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 18:33:13,324 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 18:33:13,324 - src.pipeline - INFO - Generating audit report...
+2026-04-16 18:33:13,324 - src.pipeline - INFO - Report generated: AUDIT_20260416_183313_89e93d9c
+2026-04-16 18:33:13,324 - src.pipeline - INFO - ================================================================================
+2026-04-16 18:33:13,324 - src.pipeline - INFO - Audit pipeline completed in 7.84s
+2026-04-16 18:33:13,325 - src.pipeline - INFO - ================================================================================
+2026-04-16 19:03:28,279 - src.pipeline - INFO - ================================================================================
+2026-04-16 19:03:28,279 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 19:03:28,280 - src.pipeline - INFO - ================================================================================
+2026-04-16 19:03:28,280 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 19:03:28,280 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 19:03:28,287 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 19:03:28,287 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 19:03:28,288 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 19:03:28,290 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 19:03:28,293 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 19:03:28,293 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 19:03:28,293 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 19:03:34,304 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 19:03:36,986 - src.clustering - INFO - Created 15 clusters
+2026-04-16 19:03:36,997 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 19:03:36,998 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 19:03:36,998 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 19:03:36,998 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 19:03:37,000 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 19:03:37,000 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 19:03:37,000 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 19:03:37,001 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 19:03:37,001 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 19:03:37,001 - src.pipeline - INFO - Generating audit report...
+2026-04-16 19:03:37,001 - src.pipeline - INFO - Report generated: AUDIT_20260416_190337_2d051910
+2026-04-16 19:03:37,002 - src.pipeline - INFO - ================================================================================
+2026-04-16 19:03:37,002 - src.pipeline - INFO - Audit pipeline completed in 8.72s
+2026-04-16 19:03:37,002 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:52:28,350 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:52:28,350 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 21:52:28,350 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:52:28,351 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 21:52:28,351 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 21:52:28,356 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:52:28,357 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:52:28,357 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 21:52:28,359 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 21:52:28,376 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 21:52:28,377 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 21:52:28,377 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 21:52:29,415 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 21:52:29,565 - src.clustering - INFO - Created 15 clusters
+2026-04-16 21:52:29,583 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 21:52:29,584 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 21:52:29,584 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 21:52:29,584 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 21:52:29,589 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 21:52:29,590 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 21:52:29,590 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 21:52:29,590 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 21:52:29,590 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 21:52:29,590 - src.pipeline - INFO - Generating audit report...
+2026-04-16 21:52:29,591 - src.pipeline - INFO - Report generated: AUDIT_20260416_215229_a010e9be
+2026-04-16 21:52:29,591 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:52:29,591 - src.pipeline - INFO - Audit pipeline completed in 1.24s
+2026-04-16 21:52:29,591 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:53:44,964 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:53:44,965 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 21:53:44,965 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:53:44,965 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 21:53:44,965 - src.data_loaders - INFO - Using CSV data loader (stops: C:\Users\sudhi\AppData\Local\Temp\tmpgswtjiy3\stops.csv, grievances: C:\Users\sudhi\AppData\Local\Temp\tmpgswtjiy3\grievances.csv)
+2026-04-16 21:53:44,978 - src.data_loaders - INFO - Loaded 50 stops from C:\Users\sudhi\AppData\Local\Temp\tmpgswtjiy3\stops.csv
+2026-04-16 21:53:44,990 - src.data_loaders - INFO - Loaded 263 grievances from C:\Users\sudhi\AppData\Local\Temp\tmpgswtjiy3\grievances.csv
+2026-04-16 21:53:44,991 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:53:44,991 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:53:44,991 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 21:53:44,991 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 21:53:44,994 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 21:53:44,994 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 21:53:44,995 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 21:53:45,911 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 21:53:46,020 - src.clustering - INFO - Created 15 clusters
+2026-04-16 21:53:46,037 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 21:53:46,037 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 21:53:46,037 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 21:53:46,037 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 21:53:46,041 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 21:53:46,042 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 21:53:46,042 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 21:53:46,042 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 21:53:46,042 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 21:53:46,042 - src.pipeline - INFO - Generating audit report...
+2026-04-16 21:53:46,043 - src.pipeline - INFO - Report generated: AUDIT_20260416_215346_5a86ce33
+2026-04-16 21:53:46,043 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:53:46,043 - src.pipeline - INFO - Audit pipeline completed in 1.08s
+2026-04-16 21:53:46,043 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:54:08,721 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:54:08,721 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 21:54:08,722 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:54:08,722 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 21:54:08,722 - src.data_loaders - INFO - Using CSV data loader (stops: C:\Users\sudhi\AppData\Local\Temp\tmpc5gjieu2\stops.csv, grievances: C:\Users\sudhi\AppData\Local\Temp\tmpc5gjieu2\grievances.csv)
+2026-04-16 21:54:08,728 - src.data_loaders - INFO - Loaded 50 stops from C:\Users\sudhi\AppData\Local\Temp\tmpc5gjieu2\stops.csv
+2026-04-16 21:54:08,743 - src.data_loaders - INFO - Loaded 263 grievances from C:\Users\sudhi\AppData\Local\Temp\tmpc5gjieu2\grievances.csv
+2026-04-16 21:54:08,743 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:54:08,743 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:54:08,743 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 21:54:08,744 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 21:54:08,747 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 21:54:08,747 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 21:54:08,747 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 21:54:09,667 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 21:54:09,780 - src.clustering - INFO - Created 15 clusters
+2026-04-16 21:54:09,793 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 21:54:09,794 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 21:54:09,794 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 21:54:09,794 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 21:54:09,798 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 21:54:09,798 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 21:54:09,798 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 21:54:09,798 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 21:54:09,798 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 21:54:09,798 - src.pipeline - INFO - Generating audit report...
+2026-04-16 21:54:09,799 - src.pipeline - INFO - Report generated: AUDIT_20260416_215409_e5291241
+2026-04-16 21:54:09,799 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:54:09,799 - src.pipeline - INFO - Audit pipeline completed in 1.08s
+2026-04-16 21:54:09,799 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:58:47,686 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:58:47,687 - src.pipeline - INFO - Starting accessibility audit pipeline for Sample City
+2026-04-16 21:58:47,687 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:58:47,687 - src.pipeline - INFO - Loading data for Sample City...
+2026-04-16 21:58:47,687 - src.data_loaders - INFO - Using mock data loader
+2026-04-16 21:58:47,690 - src.data_loaders - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:58:47,690 - src.pipeline - INFO - Loaded 50 stops and 263 grievances
+2026-04-16 21:58:47,690 - src.pipeline - INFO - Clustering grievances...
+2026-04-16 21:58:47,691 - src.clustering - INFO - Clustering 263 grievances using tfidf method
+2026-04-16 21:58:47,694 - src.text_processing - INFO - TF-IDF vectorization: 263 documents, 68 features
+2026-04-16 21:58:47,694 - src.clustering - INFO - Vectorized to shape: (263, 68)
+2026-04-16 21:58:47,694 - src.clustering - INFO - Finding optimal clusters (K range: 3-15)
+2026-04-16 21:58:48,564 - src.clustering - INFO - Optimal K: 15 with silhouette score: 0.821
+2026-04-16 21:58:48,690 - src.clustering - INFO - Created 15 clusters
+2026-04-16 21:58:48,708 - src.clustering - INFO - Labeled clusters with themes
+2026-04-16 21:58:48,708 - src.pipeline - INFO - Created 15 clusters
+2026-04-16 21:58:48,708 - src.pipeline - INFO - Scoring accessibility gaps...
+2026-04-16 21:58:48,709 - src.gap_scorer - INFO - Scoring 50 stops for accessibility gaps
+2026-04-16 21:58:48,712 - src.gap_scorer - INFO - Scored 50 stops
+2026-04-16 21:58:48,713 - src.gap_scorer - INFO - CRITICAL: 20
+2026-04-16 21:58:48,713 - src.gap_scorer - INFO - HIGH: 10
+2026-04-16 21:58:48,713 - src.gap_scorer - INFO - MEDIUM: 18
+2026-04-16 21:58:48,713 - src.gap_scorer - INFO - LOW: 2
+2026-04-16 21:58:48,713 - src.pipeline - INFO - Generating audit report...
+2026-04-16 21:58:48,714 - src.pipeline - INFO - Report generated: AUDIT_20260416_215848_464b3dac
+2026-04-16 21:58:48,714 - src.pipeline - INFO - ================================================================================
+2026-04-16 21:58:48,714 - src.pipeline - INFO - Audit pipeline completed in 1.03s
+2026-04-16 21:58:48,714 - src.pipeline - INFO - ================================================================================

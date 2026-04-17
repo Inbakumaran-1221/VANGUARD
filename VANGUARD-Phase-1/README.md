@@ -1,0 +1,463 @@
+# Accessibility Auditor: AI-Powered Gap Detection for Urban Public Transport
+
+A comprehensive system for analyzing city bus/metro stop data, citizen complaints, and infrastructure to identify accessibility gaps for persons with disabilities.
+
+## Overview
+
+This project implements an end-to-end accessibility audit pipeline that:
+
+1. **Ingests Data:** Loads transit stop information, citizen grievances, and accessibility standards
+2. **Analyzes Grievances:** Clusters citizen complaints using NLP to identify common accessibility issues
+3. **Scores Gaps:** Calculates accessibility gap scores for each stop (0-100 scale)
+4. **Prioritizes Interventions:** Identifies stops needing immediate remediation
+5. **Generates Reports:** Produces professional PDF audit reports with actionable recommendations
+
+## Features
+
+### Data Processing
+- **Multi-source Data Loading:** CSV imports, GTFS feed support, synthetic demo data
+- **NLP Text Processing:** Tokenization, lemmatization, stopword removal, TF-IDF/embedding vectorization
+- **Automatic Clustering:** K-means clustering with optimal K selection via silhouette score
+
+### Gap Analysis
+- **Accessibility Standards:** WCAG 2.1 and ADA-compliant criteria for transit infrastructure
+- **Feature Scoring:** Calculates weighted gap scores based on missing features and grievance mentions
+- **Priority Levels:** CRITICAL (80+), HIGH (60-79), MEDIUM (40-59), LOW (<40)
+
+### Reporting & Visualization
+- **Interactive Dashboard:** Streamlit web UI with map, tables, charts
+- **REST API:** FastAPI backend for programmatic access
+- **PDF Reports:** Professional formatted audit reports with findings and recommendations
+- **Geospatial Mapping:** Folium maps showing priority distribution across city
+
+## Technology Stack
+
+### Backend
+- **Python 3.9+**: Core language
+- **FastAPI**: REST API server
+- **Pandas/NumPy**: Data processing
+- **scikit-learn**: K-means clustering, TF-IDF vectorization
+- **sentence-transformers**: Optional embedding-based clustering
+- **NLTK/spaCy**: NLP preprocessing
+- **reportlab/weasyprint**: PDF generation
+
+### Frontend
+- **Streamlit**: Interactive web dashboard
+- **Folium**: Interactive maps
+- **Plotly**: Data visualization charts
+
+## Installation
+
+### Prerequisites
+- Python 3.9 or higher
+- pip or conda
+
+### Setup
+
+1. **Clone and enter directory:**
+   ```bash
+   cd d:\KSR
+   ```
+
+2. **Create virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -e .
+   ```
+
+   Or with optional dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
+
+## Quick Start
+
+### 1. Generate Demo Data
+
+```bash
+python -m src.data_generator
+```
+
+This generates synthetic demo data:
+- `data/demo_stops.csv`: 50 transit stops with accessibility features
+- `data/demo_grievances.csv`: 300 citizen complaints
+
+### 2. Run CLI Pipeline
+
+```bash
+python -c "
+from src.pipeline import run_audit_pipeline
+
+report, pipeline = run_audit_pipeline(
+    city_name='Sample City',
+    use_mock=True,
+    clustering_method='tfidf'
+)
+
+print(f'Report: {report.report_id}')
+print(f'Stops: {report.total_stops_audited}')
+print(f'Avg Gap Score: {report.avg_gap_score:.1f}/100')
+"
+```
+
+### 3. Launch Streamlit Dashboard
+
+```bash
+streamlit run src/dashboard.py
+```
+
+Then open browser to `http://localhost:8501`
+
+### 4. Start FastAPI Server
+
+```bash
+python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+API docs available at `http://localhost:8000/docs`
+
+## Usage Examples
+
+### Using the Pipeline Programmatically
+
+```python
+from src.pipeline import run_audit_pipeline
+from src.pdf_reporter import generate_pdf_report
+
+# Run complete audit
+report, pipeline = run_audit_pipeline(
+    city_name="My City",
+    stops_source="path/to/stops.csv",
+    grievances_source="path/to/grievances.csv",
+    clustering_method='tfidf'  # or 'embedding'
+)
+
+# Generate PDF
+pdf_bytes = generate_pdf_report(report)
+with open("audit_report.pdf", "wb") as f:
+    f.write(pdf_bytes)
+
+# Access results
+print(f"Stops analyzed: {len(pipeline.stops)}")
+print(f"Grievance clusters: {len(pipeline.clusters)}")
+print(f"Gap scores: {pipeline.scores}")
+```
+
+### CSV Format
+
+**stops.csv:**
+```
+id,name,latitude,longitude,stop_type,has_ramp,has_audio_signals,has_tactile_pavement,has_seating,has_lighting,has_staff_assistance,has_restroom,has_information_board,accessible_entrance,level_platform,district
+STOP_0001,Main Station,40.7128,-74.0060,bus_stop,true,false,true,true,true,false,false,true,true,true,Central
+```
+
+**grievances.csv:**
+```
+id,stop_id,text,category,severity,timestamp,submitted_by,resolved
+GRIEVANCE_00001,STOP_0001,No ramp at entrance difficult for wheelchair users,,3,2025-10-15T14:30:00,USER_1234,false
+```
+
+## Architecture
+
+### Core Modules
+
+| Module | Purpose |
+|--------|---------|
+| `models.py` | Pydantic data models for type safety |
+| `standards.py` | Accessibility standards and criteria |
+| `data_loaders.py` | CSV/GTFS/mock data ingestion |
+| `text_processing.py` | NLP preprocessing and vectorization |
+| `clustering.py` | K-means and embedding-based clustering |
+| `gap_scorer.py` | Accessibility gap calculation |
+| `pipeline.py` | End-to-end orchestration |
+| `pdf_reporter.py` | PDF report generation |
+| `main.py` | FastAPI REST server |
+| `dashboard.py` | Streamlit web UI |
+
+### Data Flow
+
+```
+Raw Data (CSV/GTFS)
+    ↓
+Data Loading & Validation
+    ↓
+NLP Text Processing (Grievances)
+    ↓
+Grievance Clustering
+    ↓
+Gap Scoring (per stop)
+    ↓
+Report Generation
+    ↓
+Visualization (Dashboard/API/PDF)
+```
+
+## Evaluation Metrics
+
+### System Performance
+
+1. **Clustering Quality** (Silhouette Score)
+   - Target: ≥ 0.3 (acceptable coherence)
+   - Current implementation: Typically 0.3-0.5 with TF-IDF, 0.4-0.6 with embeddings
+
+2. **Gap Detection Accuracy**
+   - Precision: % of identified gaps matching ground-truth checklist
+   - Tested against: WCAG 2.1 Level AA criteria
+
+3. **Network Coverage**
+   - % of total stops audited
+   - Target: ≥ 80%
+
+4. **Performance**
+   - Processing time for 1000 stops + 5000 grievances
+   - Target: < 30 seconds
+
+### Key Metrics Reported
+
+- **Gap Score Distribution:** 0-100 scale per stop
+- **Priority Breakdown:** Count of stops per priority level
+- **Grievance Theme Clusters:** Top N themes with keyword extraction
+- **Cost Estimation:** Rough remediation cost per stop
+- **Recommendations:** Actionable items per stop and city-wide
+
+## Advanced Features
+
+### Clustering Methods
+
+**TF-IDF (Default)**
+- Fast, lightweight
+- Works well for English
+- Good keyword extraction
+- Silhouette score: 0.3-0.5
+
+**Sentence Embeddings (Optional)**
+- More semantic understanding
+- Better cross-language support
+- Slower but higher quality
+- Requires CUDA for GPU acceleration
+- Silhouette score: 0.4-0.6
+
+Toggle via `clustering_method` parameter in pipeline.
+
+### Real Data Integration
+
+To use with real data:
+
+1. **GTFS Feeds:** Use `gtfs_feed` package for transit data
+2. **Complaint Portals:** API integration for live grievance scraping
+3. **Manual Upload:** Use CSV files from any source
+
+Update `data_loaders.py` to add custom loaders.
+
+## Project Structure
+
+```
+d:\KSR\
+├── pyproject.toml              # Project metadata & dependencies
+├── README.md                   # This file
+├── src/
+│   ├── __init__.py
+│   ├── models.py              # Pydantic data models
+│   ├── standards.py           # Accessibility standards
+│   ├── utils.py               # Utilities & constants
+│   ├── data_generator.py      # Synthetic data generation
+│   ├── data_loaders.py        # Data ingestion
+│   ├── text_processing.py     # NLP preprocessing
+│   ├── clustering.py          # Grievance clustering
+│   ├── gap_scorer.py          # Gap calculation
+│   ├── pipeline.py            # End-to-end orchestration
+│   ├── pdf_reporter.py        # PDF generation
+│   ├── main.py                # FastAPI server
+│   └── dashboard.py           # Streamlit UI
+├── data/
+│   ├── demo_stops.csv
+│   └── demo_grievances.csv
+├── tests/
+│   ├── test_clustering.py
+│   ├── test_gap_scorer.py
+│   └── test_pipeline.py
+└── docs/
+    ├── ARCHITECTURE.md
+    └── DATA_SCHEMA.md
+```
+
+## Testing
+
+### Run Unit Tests
+
+```bash
+pytest tests/ -v --cov=src --cov-report=html
+```
+
+### Run Specific Test
+
+```bash
+pytest tests/test_gap_scorer.py -v
+```
+
+### Generate Coverage Report
+
+```bash
+coverage run -m pytest tests/
+coverage html
+# Open htmlcov/index.html in browser
+```
+
+## Performance Considerations
+
+### Scaling to Larger Cities
+
+- **Memory:** ~100MB for 1000 stops + 5000 grievances
+- **Processing Time:** ~10-30 seconds for clustering + scoring
+- **Optimization Hints:**
+  - Use embedding method for better clustering (but slower)
+  - Reduce max_features in TF-IDF for speed
+  - Implement result caching for repeated analyses
+  - Consider async processing for large pipelines
+
+### Optimization Options
+
+```python
+# Faster mode (less accurate clustering)
+report, pipeline = run_audit_pipeline(
+    city_name="Large City",
+    clustering_method='tfidf',  # Not 'embedding'
+    # Consider reducing features in text_processing.py
+)
+
+# Higher quality mode (slower)
+report, pipeline = run_audit_pipeline(
+    city_name="Large City",
+    clustering_method='embedding',  # Uses transformer models
+)
+```
+
+## Future Enhancements
+
+### Phase 2 (Post-MVP)
+
+- [ ] **Vision Analysis:** YOLOv8 for detecting ramps, tactile pavement in images
+- [ ] **Live Data Integration:** Real GTFS feeds and complaint portal APIs
+- [ ] **Trend Analysis:** Grievance volume over time, seasonal patterns
+- [ ] **Predictive Modeling:** Identify at-risk stops before complaints emerge
+- [ ] **Multi-Language Support:** NLP for non-English grievances
+- [ ] **Mobile App:** Field auditor app for manual verification
+- [ ] **LLM Integration:** GPT/Llama for detailed recommendations
+- [ ] **Database Backend:** Replace in-memory cache with PostgreSQL
+- [ ] **Docker/Containerization:** Deployment in Kubernetes
+- [ ] **Authentication:** User roles and permissions
+
+## Configuration
+
+### Environment Variables
+
+```bash
+# Optional: Set these in .env file
+LOG_LEVEL=INFO
+API_HOST=0.0.0.0
+API_PORT=8000
+DASHBOARD_PORT=8501
+```
+
+### Settings in Code
+
+Key constants in `src/utils.py`:
+
+```python
+MIN_GRIEVANCES_FOR_CLUSTERING = 5
+DEFAULT_N_CLUSTERS = 8
+MAX_N_CLUSTERS = 15
+MIN_SILHOUETTE_SCORE = 0.3
+
+PRIORITY_THRESHOLDS = {
+    "CRITICAL": 80,
+    "HIGH": 60,
+    "MEDIUM": 40,
+    "LOW": 0,
+}
+```
+
+## Troubleshooting
+
+### Issue: "No module named 'sentence_transformers'"
+
+**Solution:**
+```bash
+pip install sentence-transformers torch
+```
+
+### Issue: Streamlit dashboard not loading
+
+**Solution:**
+```bash
+# Clear Streamlit cache
+streamlit cache clear
+# Restart dashboard
+streamlit run src/dashboard.py
+```
+
+### Issue: PDF generation fails
+
+**Solution:**
+```bash
+pip install --upgrade reportlab weasyprint
+# On Windows, may need: pip install weasyprint[images]
+```
+
+### Issue: Clustering produces low silhouette scores
+
+**Try:** Switch to embedding method (slower but better quality):
+```python
+run_audit_pipeline(..., clustering_method='embedding')
+```
+
+## Contributing
+
+### Code Style
+
+- PEP 8 compliance via `black` and `flake8`
+- Type hints on all public functions
+- Comprehensive docstrings
+
+### Running Linters
+
+```bash
+black src/ tests/
+flake8 src/ tests/
+pylint src/
+```
+
+## License
+
+MIT License - See LICENSE file for details
+
+## References
+
+### Accessibility Standards
+- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [ADA Accessibility Guidelines](https://www.ada.gov/)
+- [Universal Design Principles](https://universaldesign.ie/what-is-universal-design/)
+
+### Tech Documentation
+- [FastAPI Docs](https://fastapi.tiangolo.com/)
+- [Streamlit Docs](https://docs.streamlit.io/)
+- [scikit-learn](https://scikit-learn.org/)
+- [sentence-transformers](https://www.sbert.net/)
+
+## Contact & Support
+
+For questions, issues, or suggestions:
+- Open an issue on GitHub
+- Contact the development team
+- Check documentation in `docs/` folder
+
+---
+
+**Last Updated:** April 2026  
+**Version:** 0.1.0  
+**Status:** MVP (Fully Functional Core System)

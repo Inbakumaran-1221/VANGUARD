@@ -1,0 +1,4 @@
+COMPLAINTS_TOPIC = "complaints_topic"
+IMAGES_TOPIC = "images_topic"
+TRANSPORT_TOPIC = "transport_topic"
+ALL_TOPICS = [COMPLAINTS_TOPIC, IMAGES_TOPIC, TRANSPORT_TOPIC]

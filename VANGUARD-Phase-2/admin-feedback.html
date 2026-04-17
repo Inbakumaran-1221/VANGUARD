@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Feedback | AccessAudit</title>
+  <meta name="description" content="Admin panel for filtering, editing, deleting, and exporting user feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">Dashboard</a>
+        <a href="transit-stops.html">Transit Stops</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="analysis.html">Run Analysis</a>
+        <a href="reports.html">Reports</a>
+        <a class="active" href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="text-btn" id="exportCsvTop" type="button">Export CSV</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Admin Feedback Center</h1>
+          <p>Filter, edit, delete, and export human accessibility reports.</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="reloadFeedback" type="button">Reload</button>
+          <button class="btn btn-primary" id="exportCsv" type="button">Export CSV</button>
+        </div>
+      </header>
+
+      <section class="panel reveal">
+        <div class="panel-head">
+          <h2>Filters</h2>
+        </div>
+        <form class="feedback-form" id="feedbackFilterForm">
+          <label>
+            City
+            <select id="filterCity">
+              <option value="">All Cities</option>
+            </select>
+          </label>
+          <label>
+            Severity
+            <select id="filterSeverity">
+              <option value="">All Severities</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+              <option value="critical">Critical</option>
+            </select>
+          </label>
+          <button class="btn btn-secondary" type="submit">Apply Filters</button>
+        </form>
+      </section>
+
+      <section class="panel reveal table-panel">
+        <div class="panel-head">
+          <h2>Feedback Records</h2>
+          <span class="panel-sub" id="feedbackCount">0 records</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>City</th>
+                <th>Stop</th>
+                <th>Severity</th>
+                <th>Message</th>
+                <th>Created</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="feedbackAdminTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="admin-feedback.js"></script>
+</body>
+</html>

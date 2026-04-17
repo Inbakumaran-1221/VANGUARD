@@ -1,0 +1,24 @@
+{
+  "name": "vanguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AccessAudit is a transit accessibility product for reviewing stop-level gaps, grievance themes, and reporting priorities.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k \"npm run backend:dev\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "backend:dev": "node scripts/start-backend.cjs",
+    "kafka:up": "docker compose -f docker-compose.kafka.yml up -d",
+    "kafka:down": "docker compose -f docker-compose.kafka.yml down",
+    "kafka:logs": "docker compose -f docker-compose.kafka.yml logs -f"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^8.0.8"
+  }
+}
