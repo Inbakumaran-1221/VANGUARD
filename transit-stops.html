@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transit Stops | AccessAudit</title>
+  <meta name="description" content="Transit stops accessibility details and priority map.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="transit-stops.html">Transit Stops</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="analysis.html">Run Analysis</a>
+        <a href="reports.html">Reports</a>
+        <a href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="text-btn" id="printReportTop" type="button">Export PDF</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Transit Stops</h1>
+          <p>Map and station-level audit output</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="loadDemo" type="button">Load Dataset</button>
+          <button class="btn btn-primary" id="runAudit" type="button">Run Analysis</button>
+        </div>
+      </header>
+
+      <section class="main-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Live Map Integration</h2>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <span class="panel-sub">Real map markers with tooltips and severity</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="priorityMapToggle">
+                <span class="toggle-slider"></span>
+                <span class="toggle-label" style="margin-left: 0.5rem; font-size: 0.85rem;">Priority Map Mode</span>
+              </label>
+            </div>
+          </div>
+          <div class="live-map" id="liveMap" aria-label="Live transit map"></div>
+          <div class="legend-inline">
+            <span><i class="dot critical"></i>Critical</span>
+            <span><i class="dot high"></i>High</span>
+            <span><i class="dot medium"></i>Medium</span>
+            <span><i class="dot low"></i>Low</span>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Highest Risk Stops</h2>
+          </div>
+          <div class="metric-list" id="priorityList"></div>
+        </article>
+      </section>
+
+      <section class="panel reveal table-panel">
+        <div class="panel-head">
+          <h2>Transit Stops Audit Table</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Stop</th>
+                <th>Gap Score</th>
+                <th>Confidence</th>
+                <th>Coverage</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody id="scoreTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="sub-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Accessibility Feature Breakdown</h2>
+            <span class="panel-sub" id="selectedStopName">Select a stop from map/table</span>
+          </div>
+          <div class="checklist-grid" id="featureChecklist"></div>
+          <div class="metric-list" id="selectedMeta"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Image Evidence</h2>
+            <strong id="confidenceValue">0%</strong>
+          </div>
+          <div class="evidence-canvas" id="evidenceCanvas">
+            <img id="evidenceImage" alt="Stop evidence"
+              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=60">
+            <div id="bboxLayer"></div>
+          </div>
+          <div class="chart-legend" id="imageSourceText">Source: -</div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Explainable AI (XAI) Insight</h2>
+          </div>
+          <div class="metric-stack" id="xaiBreakdown"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Accessibility Trend Forecast</h2>
+            <span class="panel-sub">Historical vs Predicted Gap Score</span>
+          </div>
+          <div style="position: relative; height:200px; width:100%; margin-top: 0.5rem;">
+            <canvas id="trendChart"></canvas>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="transit-stops.js"></script>
+</body>
+
+</html>

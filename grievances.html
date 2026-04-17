@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grievances | AccessAudit</title>
+  <meta name="description" content="Grievance theme analysis for transport accessibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-bg" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo-block">
+        <div class="logo-mark">AA</div>
+        <div>
+          <strong>AccessAudit</strong>
+          <p>Transit Accessibility</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html">Dashboard</a>
+        <a href="transit-stops.html">Transit Stops</a>
+        <a class="active" href="grievances.html">Grievances</a>
+        <a href="analysis.html">Run Analysis</a>
+        <a href="reports.html">Reports</a>
+        <a href="admin-feedback.html">Admin Feedback</a>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="text-btn" id="printReportTop" type="button">Export PDF</button>
+        <button class="text-btn" data-theme-toggle type="button">Night Mode</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar reveal">
+        <div>
+          <h1>Grievance Analyzer</h1>
+          <p>Complaint clustering and theme extraction</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="loadDemo" type="button">Load Dataset</button>
+          <button class="btn btn-primary" id="runAudit" type="button">Run Analysis</button>
+        </div>
+      </header>
+
+      <section class="sub-grid reveal">
+        <article class="panel grievance-panel">
+          <div class="panel-head">
+            <h2>Citizen Grievance Input</h2>
+          </div>
+          <textarea id="grievanceInput" rows="9" placeholder="Paste one complaint per line"></textarea>
+          <button class="btn btn-secondary" id="analyzeText" type="button">Analyze Complaints</button>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Theme Clusters</h2>
+            <strong id="silhouetteMetric">0.00</strong>
+          </div>
+          <div class="cluster-list" id="clusterList"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Theme Breakdown</h2>
+          </div>
+          <div class="metric-list" id="categoryBreakdown"></div>
+        </article>
+      </section>
+
+      <section class="main-grid reveal">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>User Feedback Integration</h2>
+            <span class="panel-sub">Human reports merged with AI signals</span>
+          </div>
+          <form class="feedback-form" id="feedbackForm">
+            <label>
+              Stop
+              <select id="feedbackStop"></select>
+            </label>
+            <label>
+              Severity
+              <select id="feedbackSeverity">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+                <option value="critical">Critical</option>
+              </select>
+            </label>
+            <label class="full-width">
+              Issue Description
+              <textarea id="feedbackMessage" rows="4" placeholder="Example: Braille signage missing at platform entry"></textarea>
+            </label>
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+              <button class="btn btn-ghost" type="button" id="recordComplaintBtn" title="Use your microphone to dictate a complaint">🎤 Record Voice</button>
+              <button class="btn btn-primary" type="submit">Submit Issue</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Recent Feedback</h2>
+          </div>
+          <div class="metric-list" id="feedbackList"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="theme-toggle.js"></script>
+  <script type="module" src="grievances.js"></script>
+</body>
+</html>
